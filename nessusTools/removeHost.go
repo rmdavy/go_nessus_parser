@@ -7,6 +7,7 @@ import (
 	"github.com/beevik/etree"
 )
 
+//RemoveHosts removes a host and all associated issues from a nessus file.
 func RemoveHosts(filePath string, hosts []string) (string, error) {
 	fmt.Println("Removing Hosts:")
 	for _, b := range hosts {

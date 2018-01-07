@@ -7,6 +7,9 @@ import (
 	"github.com/beevik/etree"
 )
 
+//CombineReports adds issues from a list of nessus reports to a copy of the first report.
+//The new report has a randomly generated name and all the meta data associated with the first report
+//that was passed to the function. The new report will be saved in the current directory.
 func CombineReports(filePath []string) (string, error) {
 
 	//report for hosts to be added too

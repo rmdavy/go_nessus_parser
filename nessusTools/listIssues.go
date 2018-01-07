@@ -6,6 +6,7 @@ import (
 	"github.com/beevik/etree"
 )
 
+//ListIssues lists all issues in a collection of Nessus reports by name and ID
 func ListIssues(filePath string) ([]string, error) {
 	//current report hosts are being added from
 	report := etree.NewDocument()

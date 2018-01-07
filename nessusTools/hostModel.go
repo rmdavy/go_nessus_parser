@@ -1,5 +1,6 @@
 package nessusTools
 
+//Host model is used for storing nessus issues associated with a specific host
 type Host struct {
 	name   string
 	issues []issue
@@ -19,6 +20,7 @@ func (h Host) deleteIssue(i int) Host {
 	return h
 }
 
+//RemoveDuplicateIssues remoevs duplicate issues from the issues []string of a specific host.
 func (h Host) RemoveDuplicateIssues() Host {
 	encountered := map[string]int{}
 	var newHost Host

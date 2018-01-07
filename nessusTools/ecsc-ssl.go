@@ -81,7 +81,7 @@ func SslIssues(filePath string, writeToFile bool, Hosts []Host) error {
 	}
 
 	if len(Hosts) == 0 {
-		err = errors.New("Error: No hosts have been parsed.")
+		err = errors.New("error: No hosts have been parsed")
 	}
 
 	for _, a := range Hosts {
@@ -131,7 +131,7 @@ func Summary(filePath string, writeToFile bool, Hosts []Host) error {
 	}
 
 	if len(Hosts) == 0 {
-		err = errors.New("Error: No hosts have been parsed.")
+		err = errors.New("error: No hosts have been parsed")
 		fmt.Println(err)
 		os.Exit(1)
 	}

@@ -1,5 +1,6 @@
 package nessusTools
 
+//RemoveDuplicates removes duplicate entries from a string slice
 func RemoveDuplicates(elements []string) []string {
 	// Use map to record duplicates as we find them.
 	encountered := map[string]bool{}

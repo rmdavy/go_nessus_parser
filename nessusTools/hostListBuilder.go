@@ -7,7 +7,7 @@ import (
 	"github.com/beevik/etree"
 )
 
-//SearchIssues collects all issues and output from a nessus report, prunes repreating information and presents output to a user based on a specific search term.
+//HostListBuilder creates a list of Host objects and populates them with findings from the supplied reports
 func HostListBuilder(filePath string, writeToFile bool) ([]Host, error) {
 	//current report hosts are being added from
 	var Hosts []Host
